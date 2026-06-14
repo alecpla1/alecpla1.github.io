@@ -28,9 +28,7 @@ const projects = {
     title: "Performative Salvation (2026)",
 
     description: `
-      "A darkly comic VR séance with a killer self-help AI, where optimism means survival and defeatism brings the laser closer."<br><br>
-
-Performative Salvation is an interactive, LLM-enhanced VR film in which the player (in the role of a space-station crew member overlooking Earth) is interrogated by a godlike AI debating whether humanity is salvageable.<br><br>
+      "Performative Salvation is an interactive, LLM-enhanced VR film in which the player (in the role of a space-station crew member overlooking Earth) is interrogated by a godlike AI debating whether humanity is salvageable.<br><br>
 
 Through answering the AI’s questions about humanity's existential challenges, the world will either be saved, or indifference will prevail.<br><br>
 
