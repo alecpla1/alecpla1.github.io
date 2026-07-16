@@ -9,7 +9,15 @@ const projects = {
     title: "About",
 
     description: `
-      Alec Pla works at the intersection of visual art, technology, and immersive media. He is based in California.
+      Alec Pla is an interdisciplinary artist and game developer at the intersection of installation art, immersive media, and game design, with a particular interest in emerging technologies and the challenges and opportunities they present.<br><br>
+
+His debut VR experience Performative Salvation premiered in 2026 and featured at events including Portland Festival of Cinema, Animation & Technology, Atlanta Film festival, Maryland Film Festival CineTech, and NewImages in Paris, where he was invited to speak on the themes of AI and oppression featured in his work.<br><br> 
+
+Alec's career in technology + art began in late 2021 when, after overseeing retail demo creation for the Meta Quest 2 launch, he left to pursue extended reality (XR) development full time, teaching himself to code while creating XR prototypes via the Unity game engine.<br><br> 
+
+A long time lover of narrative gaming and interactive art, he began focusing on artistic work full time in late 2023 as part of Gray Area's cultural incubator in San Francisco working on an XR project around movement, dance, musical co-creation.<br><br> 
+
+Alec continues to work on a variety of new projects. He lives in San Diego, California.<br><br>
     `,
 
     media: [
@@ -28,16 +36,16 @@ const projects = {
     title: "Performative Salvation (2026)",
 
     description: `
-      Performative Salvation is an interactive, LLM-enhanced VR film in which the player (in the role of a space-station crew member overlooking Earth) is interrogated by a godlike AI debating whether humanity is salvageable.<br><br>
+      Performative Salvation is an interactive VR film in which the audience participant is interrogated by a disgruntled, newly-conscious godlike AI debating whether humanity is salvageable.<br><br>
 
-Through answering the AI’s questions about humanity's existential challenges, the world will either be saved, or indifference will prevail.<br><br>
-
-With a touch of dark humor, this work asks whether a relentless, nearly performative optimism is a necessary delusion helping us counter our self-destructive inclinations, and a more hopeful alternative to defeatism.<br><br>
+By answering the AI’s questions on humanity's existential challenges (with a touch of dark humor), it explores whether a relentless, nearly performative optimism is a necessary delusion helping us counter our self-destructive inclinations, and a more hopeful alternative to defeatism.<br><br>
 
 
-A solo project, Performative Salvation was created in Unity game engine and has screened at film festivals in the US and Europe.
-<br>
+A solo project, Performative Salvation was created in Unity game engine and is playable on Meta Quest hardware, utilizing hand tracking, hand gesture interpretation, voice input, and text-to-speech. <br><br>
 
+Player responses are routed to OpenAI's API, where a custom prompt analyzes them for the level of "optimism". These analyses are routed back to the game runtime, affecting the AI character's response (and its likelihood to "spare" the Earth at the end..) <br><br>
+
+Runtime: 6 mins
 
     `,
 
@@ -49,7 +57,7 @@ A solo project, Performative Salvation was created in Unity game engine and has 
     	src: "images/project1/1.png",
     	size: "poster"
       },
-{
+      {
     	type: "youtube",
     	embed: "https://www.youtube.com/embed/y7BsT45Kaj8",
     	size: "large"
@@ -67,47 +75,84 @@ A solo project, Performative Salvation was created in Unity game engine and has 
 
     type: "multi",
 
-    title: "Project Two",
+    title: "XR Prototyping",
 
 projects: [
 
     {
-      title: "Coming soon",
+      title: "Palette: Hand Tracked Inventory System",
 
       description: `
-        Coming soon
+        Palette is an original file management system for hand tracking, created for an in-progress music app.<br><br> 
+
+The system is fully functional, allowing import of multiple media types into a local "mod" folder on the headset's hard drive. The demo also features media player control concepts. <br><br>
+
+This was a rewarding exercise in imagining an inventory system with XR-native media controls. <br><br>
+
+It aims to fill a need for a "palette" style inventory system for certain creativity applications in XR.<br><br>
+
+Applications could be decorating a room, housing 3D models, music files, or any other object. 
+ 
       `,
 
       media: [
         {
-          type: "",
-          src: "images/project2/21.png",
-          size: "large"
+           type: "youtube",
+    	   embed: "https://www.youtube.com/embed/otCM9KF3WDU",
+    	   size: "large"
         },
 
         {
-          type: "",
-          src: "images/project2/22.png",
-          size: "large"
+           type: "youtube",
+    	   embed: "https://www.youtube.com/embed/DXRhE_RTlOU",
+    	   size: "large"
         },
       ]
     },
 
     {
-      title: "Coming soon",
+      title: "Loci: Language Learning Memory Palace",
 
       description: `
-        Coming soon
+        Loci aims to make language learning fun by letting users place virtual objects and flashcards in their rooms. <br><br>
+
+As the sole game engine developer on the project, I implemented all interactions, sounds, and programmed the experience. A fully hand-tracked experience, it also features a pointing minigame that recognizes if you are pointing at the correct object announced by the computer.<br><br>
+
+My most notable challenge was having to develop a novel solution to for dynamic spatial anchors. This allowed the virtual objects to be moved by the user during play,  remaining there between play sessions. When you return, all your objects are exactly where you left them.<br><br>
+
+Created with a small team of artists, Loci was a submission for Meta's Presence Platform hackathon, 2024.<br><br>
+
+<a href="https://devpost.com/software/language-learning-memory-palace"
+     target="_blank"
+     rel="noopener noreferrer">
+     Devpost Page
+  </a> <br><br>
+<a href="https://github.com/alexp66/MRHackathon_LanguageApp"
+     target="_blank"
+     rel="noopener noreferrer">
+     GitHub
+  </a> 
       `,
 
-      media: [
-        {
-          type: "",
-          src: "images/project2/prototypeB.jpg",
-          size: "medium"
-        }
+      media: [        
+	{
+	   type: "youtube",
+    	   embed: "https://www.youtube.com/embed/oyx1LnARqRs",
+    	   size: "large"
+	},
+	{
+          type: "image",
+          src: "images/project2/project2/1.jpg",
+          size: "large"
+        },
+	{
+          type: "image",
+          src: "images/project2/project2/2.jpg",
+          size: "large"
+        },
+
       ]
-    }
+    },
 
   ]
 
@@ -117,39 +162,69 @@ projects: [
 
     type: "multi",
 
-    title: "Project Three",
+    title: "Game Development",
 
     projects: [
 
     {
-      title: "Coming soon",
+      title: "Generative AI Character Dialogue Trees in Unity",
 
       description: `
-        Coming soon
-      `,
+       An early iteration of <i>Performative Salvation</i>, featured 3 AI characters with distinct personalities who could generate voice responses to the players questions or statements in real time. I eventually decided the responses felt too <i>AI</i>, and decided to remove the feature and write the voice lines myself in a more simplified experience. That being said, I am interested to revisit this system someday with more refined LLM models.<br><br> 
+
+The primary challenge was allowing for free-flowing yet "on-rails" conversation. This relies on asking the AI model not only for an in-character reponse, but for an analysis of how the player's last input affects the "goals" of the interaction (the branches of the dialogue tree, if you will).<br><br> 
+
+Using tools such as OpenAI and many more, it is feasible to train and process user intents and entities embedded in each  message. Using these inferred intents and entities, you can programmatically adjust your subsequent prompts to the ChatGPT model to return a flavor of response that fits your desired narrative path. (and the more detailed the path, the better. quite the rabbit hole)<br><br>
+
+
+<a href="Using Generative Text AIs to Create Roleplaying Characters & NPCs.html"
+target="_blank"
+   rel="noopener noreferrer">
+  Read Blog Post
+</a>      `,
 
       media: [
         {
-          type: "",
-          src: "images/project2/prototypeA.jpg",
+          type: "image",
+          src: "images/project3/project1/1.png",
           size: "medium"
-        }
+        },
+	{
+          type: "image",
+          src: "images/project3/project1/2.png",
+          size: "medium"
+        },
+
       ]
     },
-
-    {
-      title: "Coming soon",
+    
+     {
+      title: "Dynamic Spatial Anchors",
 
       description: `
-        Coming soon
+        During the development of <i>Loci</i>, I had to develop a novel solution to for dynamic spatial anchors. This allowed the virtual objects to be moved by the user during play,  remaining there between play sessions. When you return, all your objects are exactly where you left them.<br><br>
+
+Once a Meta spatial anchor is created, it can't be moved. This solution deletes and re-adds a GameObject's associated SpatialAnchor, as well as re-serializes the list of anchors IDs.<br><br>
+
+<a href="https://github.com/alexp66/Dynamic-Spatial-Anchors-for-Meta-SDK-Unity"
+     target="_blank"
+     rel="noopener noreferrer">
+     Github Link
+  </a> 
       `,
 
       media: [
         {
-          type: "",
-          src: "images/project2/prototypeB.jpg",
-          size: "medium"
+          type: "image",
+          src: "images/project3/project3/1.jpg",
+          size: "small"
+        },
+	{
+          type: "image",
+          src: "images/project3/project3/2.jpg",
+          size: "small"
         }
+
       ]
     }
 

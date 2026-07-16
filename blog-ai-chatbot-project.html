@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Using Generative Text AIs to Create Roleplaying Characters & NPCs — Alec Pla</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="blog-page">
+
+    <a class="back-link" href="index.html">
+      ← Back to portfolio
+    </a>
+
+    <article class="blog-post">
+
+      <header class="blog-header">
+        <h1>Using Generative Text AIs to Create Roleplaying Characters & NPCs</h1>
+
+        <p class="blog-meta">
+          Aug 6, 2024 · AI / Unity / Narrative Design
+        </p>
+      </header>
+
+      <p>
+        If you've used ChatGPT, you've probably already realized how useful
+        generative text AI can be for writing characters, dialogue, and interactive systems.
+      </p>
+
+      <figure class="blog-image-block">
+        <img src="images/blog/ai-chatbot/1.jpg" alt="AI chatbot project screenshot">
+        <figcaption>
+          Screenshot from the original chatbot / NPC project.
+        </figcaption>
+      </figure>
+
+      <h2>Using the API</h2>
+
+      <p>
+        A basic OpenAI API request is fairly simple. The more interesting part is how you
+        structure the prompt, maintain conversation history, and update the character state.
+      </p>
+
+      <p>
+        You can reference variable names inline, like <code>conversationHistories</code>,
+        <code>state</code>, or <code>userInput</code>.
+      </p>
+
+      <pre><code>public class GPT_NPC
+{
+    public string backgroundInfo = "Here, write the background about your context/world.";
+
+    Dictionary&lt;string, string&gt; _conversationHistories =
+        new Dictionary&lt;string, string&gt;
+    {
+        { "Eldrin", "" },
+        { "Aria", "" },
+    };
+
+    async void AskChatGPT(string userInput, string character)
+    {
+        string inputText =
+            $"### Background Information:\n" +
+            backgroundInfo +
+            $"### New Conversation:\n" +
+            $"Human: {userInput}\n" +
+            $"{character}:";
+    }
+}</code></pre>
+
+      <p>
+        Notice that the code block preserves indentation and uses a different visual container,
+        which makes it much easier to scan.
+      </p>
+
+      <hr class="blog-divider">
+
+      <h2>Images</h2>
+
+      <p>
+        You can place images between sections just like in the old Wix post.
+      </p>
+
+      <figure class="blog-image-block wide">
+        <img src="images/blog/ai-chatbot-2.jpg" alt="Another project screenshot">
+        <figcaption>
+          Optional caption describing the image.
+        </figcaption>
+      </figure>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
