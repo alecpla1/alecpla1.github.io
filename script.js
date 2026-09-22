@@ -36,16 +36,15 @@ Alec continues to work on a variety of new projects. He lives in San Diego, Cali
     title: "Performative Salvation (2026)",
 
     description: `
-      Performative Salvation is an interactive VR film in which the audience participant is interrogated by a disgruntled, newly-conscious godlike AI debating whether humanity is salvageable.<br><br>
+      <b>Performative Salvation</b> is an interactive VR film in which the audience participant is interrogated by a disgruntled, newly-conscious godlike AI debating whether humanity is salvageable.<br><br>
 
 By answering the AI’s questions on humanity's existential challenges (with a touch of dark humor), it explores whether a relentless, nearly performative optimism is a necessary delusion helping us counter our self-destructive inclinations, and a more hopeful alternative to defeatism.<br><br>
 
-
 A solo project, Performative Salvation was created in Unity game engine and is playable on Meta Quest hardware, utilizing hand tracking, hand gesture interpretation, voice input, and text-to-speech. <br><br>
 
-Player responses are routed to OpenAI's API, where a custom prompt analyzes them for the level of "optimism". These analyses are routed back to the game runtime, affecting the AI character's response (and its likelihood to "spare" the Earth at the end..) <br><br>
+Player responses are routed to OpenAI's API, where a custom prompt analyzes them for the level of "optimism". Results are then re-routed to the experience, altering how the AI character replies (and its likelihood to "spare" the Earth at the ending). <br><br>
 
-Runtime: 6 mins
+Its runtime is 6 minutes and, apart from the synthetic voice, it does not feature generative AI.
 
     `,
 
@@ -70,6 +69,107 @@ Runtime: 6 mins
       },      
     ]
   },
+
+project11: {
+
+    type: "single",
+
+    title: "VarComp",
+
+    description: `
+      <b><i>VarComp</b></i> is an in-progress digital music composition/dance project based on a reimagining of musical composition dubbed "variable composition".<br><br> 
+
+Branching musical options are crafted by the arranger and later "performed" via movement, meaning each composition is co-composed (or composed in 2 distinct settings).<br><br> 
+
+VarComp distinguishes itself from procedurally generated music games and audio art installations in that a composer crafts the musical options available to the performer, for several "sections" of a composition.<br><br>
+
+They champion the mantra that creativity "thrives on constraints", while allowing those without knowledge of musical instruments to feel the joys of creating a piece of music through their actions in real time. <br><br>
+
+<b><i>VarComp's</b></i> core functionality is been built in the Unity game engine, and currently uses either VR or smartphone devices for motion tracking. Inputs are limited to arm motion, affording a simple set of rules to users.<br><br>
+
+I hope to further explore how different levels of movement complexity could benefit different use cases. For example, full motion tracking may be excellent for an art installation with a very open-ended musical composition, and phone gyro controls could be preferable for location-based augmented reality experiences in which multiple users build a musical composition in tandem.<br><br>
+
+VarComp's original intention was to be strictly a VR experience that would also merge visuals with music/movements, and I still see that as a direction I would love to explore over time. 
+
+    `,
+
+    media: [
+      {
+    	type: "youtube",
+    	embed: "https://www.youtube.com/embed/4B0NoXl1YMg ",
+    	size: "large"
+      },
+
+{
+    	type: "youtube",
+    	embed: "https://www.youtube.com/embed/2i17-5s-tbw",
+    	size: "large"
+      },
+
+      {
+	type: "image",
+    	src: "images/project11/1.jpg",
+    	size: "large"
+      },
+
+      {
+	type: "image",
+    	src: "images/project11/2.jpg",
+    	size: "large"
+      },
+
+      {
+	type: "image",
+    	src: "images/project11/3.png",
+    	size: "large"
+      },      
+    ]
+  },
+
+
+project12: {
+
+    type: "single",
+
+    title: "Digital Kook",
+
+    description: `
+      <b><i>Digital Kook</b></i> is an augmented-reality public art project reimagining the tradition of dressing up the iconic surfer statue in Cardiff/Encinitas as a form of participatory art.<br><br>
+
+Virtual outfits can be viewed on a mobile AR app, automatically appearing when the user points their phone toward the Kook. Users select from a collection outfits, some inspired by actual "greatest hits" known to the community and chronicled in the book "The Cardiff Kook and His Magic Carpet Ride".<br><br>
+
+The digital interventions are modeled in Blender and integrated into a Unity-based iOS and Android application using image tracking. Once the sculpture is recognized, the selected artwork appears digitally aligned with the physical statue and remains attached as the viewer moves around it.<br><br>
+
+The project will be presented during Encinitas Art Night as an interactive public artwork and will also be available as a mobile app for visitors to experience on-site. A community art workshop held during Art Night will invite participants to design their own digital decorations.
+
+    `,
+
+
+    media: [
+      
+      {
+    	type: "youtube",
+    	embed: "https://www.youtube.com/embed/Vtz-H8IpPv0",
+    	size: "large"
+      },
+      {
+	type: "image",
+    	src: "images/project12/1.jpg",
+    	size: "poster"
+      },
+      {
+	type: "image",
+    	src: "images/project12/2.jpg",
+    	size: "large"
+      },    
+      {
+	type: "image",
+    	src: "images/project12/3.jpg",
+    	size: "large"
+      },    
+    ]
+  },
+
 
   project2: {
 
@@ -252,11 +352,23 @@ cv: {
      Shapeshift Festival, Official Selection (VR), Sofia, Bulgaria, 2026<br>   
 </div>
     </p>
+<div class="big-text-for-exhibition-work">    
+     <em>Digital Kook</em><br>
+</div>
+<div class="cv-entry-exhibition">
+     City of Encinitas, California, Art Night, October 2026<br>
+</div>
+    </p>
+
 
     <h3>PANELS/TALKS/RECOGNITIONS</h3> 
+<p>
 <div class="cv-entry-panel">  
-     "Trained to Oppress: When AI Learns Power Too Well" (Panel), NewImages Festival, Paris, France, April 2026<br>
-     Gray Area Cultural Incubator, 2023 Cohort, San Francisco, CA
+     <em>"Trained to Oppress: When AI Learns Power Too Well"</em> (Panel), NewImages Festival, Paris, France, April 2026<br></p><p>
+     Gray Area Cultural Incubator, San Francisco, CA, 2023
+</p><p>
+     Engagement Guide, Institute of Contemporary Art, San Diego, CA, Fall 2026
+</p> 
 </div>
     </p>
     
@@ -267,25 +379,27 @@ cv: {
      MSc International Business and Politics, 2016
 </div>
     </p>
-    <p>
-<div class="cv-entry-education">
-     <em>SOAS University of London</em><br>
-     Independent Study, 2010-2011
-</div>
-    </p>
 <div class="cv-entry-education">
      <em>University of Wisconsin-Whitewater</em><br>
      BBA International Business, 2012
 </div>
     </p>
-
-<h3>CERTIFICATIONS & SKILLS</h3> <p>
-<div class="cv-entry-skill">
-     <em>XR Development in Unity</em>, Circuit Stream, 2021<br>
-     <em>Advanced XR Development in Unity</em>, XR Bootcamp, 2022<br>
-     <em>C# Programming in Unity</em>, Circuit Stream, 2022<br>
+<p>
+<div class="cv-entry-education">
+     <em>SOAS, University of London</em><br>
+     Independent Study in Political Science, 2010-2011
 </div>
-</p>
+    </p>
+
+<h3>CERTIFICATIONS & SKILLS</h3> 
+<div class="cv-entry-skill">
+     <em>- XR Development in Unity</em>, Circuit Stream, 2021<br>
+     <em>- Advanced XR Development in Unity</em>, XR Bootcamp, 2022<br>
+     <em>- C# Programming in Unity</em>, Circuit Stream, 2022<br>
+</div>
+
+<h3>LANGUAGES</h3> 
+     - English (native), French (fluent)
 
     `,
 
@@ -536,4 +650,4 @@ document
 
 /* INITIAL */
 
-renderProject("project1");
+renderProject("project11");
